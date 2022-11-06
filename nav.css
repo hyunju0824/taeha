@@ -1,8 +1,156 @@
+
+*{
+    color: #fff;
+}
+body{
+    font-family: 'NanumSquareLight';   
+    min-width: 372px;
+}
+a {
+    text-decoration: none;
+    transition: color 0.2s;
+    /* color: #fff; */
+}
+a:hover{
+    color: #e8ca8f;
+}
+
 header{
-    height: 1100px;
+    position: relative;
+    height: 1400px;
+    min-width: 350px;
 }
 .video_bg video{
     height: 1100px;
     position: fixed;
     overflow: auto;
+    z-index: -1;
 }
+.navwrap{
+    padding-left: 30px;    
+    margin-top: 90px;
+    height: 100%;
+    position: absolute;
+    width: 100%; 
+}
+.close_btn{
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    background-image: url('../images/xmark-solid.svg');
+    background-repeat: no-repeat; 
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+}
+.logo a{
+    position: absolute;
+    left: 0;
+    margin: 25px;
+    display: inline-block;
+    background-image: url('../images/taeha_logo.png');
+    background-repeat: no-repeat; 
+    width: 100px;
+    height: 50px;
+    text-indent: -9999px;
+}
+.depth1{
+    margin-top: 100px;
+}
+
+/* 인사말,경영철학 */
+.nav2{
+    position: relative;
+    height: 70px;
+    /* background-color:aqua; */
+    /* padding: 0 0 10px 0; */
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+}
+.nav2>.nav_li.li2,.nav2>.nav_li.li3{
+    line-height: 0;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+}
+.nav2>.nav_li.li2{
+    top: 18px;
+    left: 20px;
+}
+.nav2>.nav_li.li3{
+    bottom: 0;
+    left: 20px;
+}
+.nav_li{
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+ul li{
+    /* padding: 10px; */
+}
+.nav3{
+    padding-bottom: 30px;
+}
+.depth2{
+    margin-top: 10px;
+}
+.secret{
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+/* 24상담 보더 호버 */
+
+.secret a{
+    float: left;
+    padding: 10px 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid #fff;
+    transition: all 0.2s;
+}
+.secret a:hover{
+    color: #e8ca8f;
+    border: 2px solid #e8ca8f;
+
+}
+.navinfo{
+    clear: both;
+
+}
+em{
+    display: block;
+}
+header>.navwrap>nav>.depth2>span{
+    display: block;
+    font-size: 20px;
+    padding: 20px 0;
+    line-height: 1.5em;
+}
+.depth2>.navinfo em.infotit{
+    display: inline-block;
+    font-size: 25px;
+    line-height: 30px;
+    border-bottom: 3px solid #fff;
+}
+.depth2>em.infotit{
+    display: inline-block;
+    font-size: 25px;
+    line-height: 30px;
+    border-bottom: 3px solid #fff;
+}
+header>.navwrap>nav>.depth2>.navinfo>span{
+    /* background-color: #fff; */
+    display: block;
+    line-height: 30px;
+    padding: 20px 0 40px 0;
+    font-size: 20px;
+}
+.depth2>em{
+    font-size: 50px;
+}
+

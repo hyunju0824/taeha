@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    background-color: #fff;
+    font-family: 'NanumSquareBold', 'NanumSquareLight', 'NanumSquare', 'NanumSquareAcb', 'NanumSquareAceb', 'NanumSquareAcl', 'NanumSquareAcr';
+    font-size: 20px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+.blind{
+    text-indent: -9999px;
+}
+/* input, button, textarea, select {
+    font-size: 1em;
+    color: #222;
+    font-family: 'Roboto', 'Noto Sans KR', 'Malgun Gothic', 'Dotum', sans-serif;
+} */
+label, button {
+    cursor: pointer;
+}
+.wrapper {
+    min-width: 372px;
+    margin: auto;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 로고 */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 9999;
+    background: #fff;
+    opacity: 0.8;
+}
+.menu_btn{
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    background-image: url('../images/bars-solid.svg');
+    background-repeat: no-repeat; 
+    width: 45px;
+    height: 40px;
+    text-indent: -9999px;
+}
+.logo a{
+    position: absolute;
+    left: 0;
+    margin: 30px;
+    display: inline-block;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat; 
+    width: 100px;
+    height: 50px;
+    text-indent: -9999px;
+}
+
+/* 타이틀 */
+h1{
+    font-size: 1.6em;
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+/* 검색바 */
+.serch-bar{
+    /* background-color: #f0f; */
+    position: relative;
+    border-style: none;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 1px 1px 10px #888;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+input{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 25%;
+    left: 8%;
+    border-style: none;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+input::placeholder{
+    color: #e5e5e5;
+}
+button{
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    background: none;
+    border-style: none;
+    font-size: 25px;
+    opacity: 0.08;
+}
+
+/* 메인이미지 */
+.main-img {
+    background: url('../images/media_memo.jpg') center center / 100% no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* 미디어 */
+.main-media-container{
+    padding: 0 20px;
+}
+.main-media-wrap{}
+ul.main-media{}
+.main-media a {
+    display: block;
+    padding-top: 2%;
+}
+.media-item{}
+.media-item1{}
+.media-item2{}
+.media-item3{}
+.media-item4{}
+.media-dl{
+    position: relative;
+}
+.media-dl dt{
+    display: none;
+}
+.media-dl dd{}
+.media-img{
+    position: relative;
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    /* background: #000; */
+}
+.media-img::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    transition: bottom 0.3s;
+    /* 그라디언트 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.7) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%); 
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    transition: all 0.3s;
+}
+dl.media-dl>.media-img:hover::after{
+     background-color: rgba(0,0,0,0.5);
+}
+dl.media-dl>.media-img:hover .media-inner-txt{
+    color: #cfa972;
+}
+dl.media-dl>.media-img:hover~.media-press {
+    background-color: #cfa972;
+}
+
+.media-img1{background-image: url('../images/media1.png');}
+.media-img2{background-image: url('../images/media2.jpg');}
+.media-img3{background-image: url('../images/media3.jpg');}
+.media-img4{background-image: url('../images/media4.jpg');}
+.media-img5{background-image: url('../images/media5.jpg');}
+.media-img6{background-image: url('../images/media6.jpg');}
+
+.media-img img{}
+.media-inner-txt{
+    /* height: 50px; */
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* margin: 30px 0 0; */
+    padding: 0 20px;
+    font-size: 0.9em;
+    color: #fff;
+    z-index: 1;
+    transition: all 0.3s;
+    word-spacing: -2px;
+}
+.media-inner-txt2{
+    padding-bottom: 10px;
+}
+.media-press{
+    padding: 2px 7px;
+    font-size: 0.7em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/* 페이지넘버 */
+.pages-container{
+    height: 80px;
+}
+.pages{
+    text-align: center;
+    padding: 20px 20% 0;
+}
+.pages>a{
+    color: #132332;
+    display: inline-block;
+    background-color: #fff;
+    padding: 1px 8px;
+    font-size: 0.8em;
+    text-align: center;
+    /* vertical-align: center; */
+    margin: 2px;
+}
+.pages>a:hover{
+    color: #cfa972;
+}
+.pages>.page1{
+    color: #fff;
+    background-color: #132332;
+   /* background-color: #cfa972;  */
+}
+.pages>.page1:hover{
+    color: #fff;
+}
+.pages>.next{
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+/* 푸터 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer * {
+    font-size: 13px;
+    font-family: 'NanumSquareRound';
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer.ft_wrap.ft_bot.ft_bot_ul a {
+    border-style: none;
+}
+
+.ft_wrap {
+    margin: 0 auto;
+    min-width: 372px;
+    background-color: #132332;
+    padding: 3px 0 0 20px;
+}
+
+.ft_top_ul {
+    padding: 25px 0 20px 0;
+    background-color: #132332;
+}
+
+.ft_top_ul li {
+    display: inline-block;
+    padding: 0 20px 0 10px;
+    position: relative;
+    line-height: 20px;
+    font-weight: 100;
+    color: #fff;
+
+}
+
+.ft_top_ul li a {
+    transition: color 0.2s;
+}
+
+.ft_top_ul li a:hover {
+    color: #e8ca8f;
+}
+
+.ft_top_ul li::after {
+    display: inline-block;
+    content: '|';
+    position: absolute;
+    right: 0;
+    top: -1px;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.ft_li_noafter:after {
+    content: '' !important;
+}
+
+/* 주소~광고책임 */
+.ft_bot {
+    background-color: #132332;
+    padding: 10px 0 30px 0;
+    word-spacing: -3px;
+
+}
+
+.ft_bot_ul li {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0 30px 0 10px;
+    letter-spacing: 0;
+    line-height: 2.3em;
+    color: #ffffff80;
+}
+
+.ft_bot_ul li::after {
+    display: inline-block;
+    content: '/';
+    position: absolute;
+    right: 0;
+    color: rgba(255, 255, 255, 0.1);
+
+}
+
+/* 선 */
+.ft_bd {
+    display: block;
+    border-top: 1px solid #ffffffcc;
+    opacity: 10%;
+    width: 96%;
+    line-height: 1px;
+}
+
+
+/* 카피라이트 */
+.ft_copywright {
+    padding: 30px 20px 50px 10px;
+    word-spacing: -1px;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+}
+
+.ft_copywright span {
+    font-size: 12px;
+    color: #ffffffcc;
+}
+
+
+
+

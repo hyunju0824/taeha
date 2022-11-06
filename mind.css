@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'NanumSquareBold', 'NanumSquareLight', 'NanumSquare', 'NanumSquareAcb', 'NanumSquareAceb', 'NanumSquareAcl', 'NanumSquareAcr';
+    font-size: 20px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+.blind{
+    text-indent: -9999px;
+}
+/* input, button, textarea, select {
+    font-size: 1em;
+    color: #222;
+    font-family: 'Roboto', 'Noto Sans KR', 'Malgun Gothic', 'Dotum', sans-serif;
+} */
+label, button {
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 로고 */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 9999;
+    background: #fff;
+    opacity: 0.8;
+}
+.menu-btn{
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    background-image: url('../images/bars-solid.svg');
+    background-repeat: no-repeat; 
+    width: 45px;
+    height: 40px;
+    text-indent: -9999px;
+}
+.logo a{
+    position: absolute;
+    left: 0;
+    margin: 30px;
+    display: inline-block;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat; 
+    width: 100px;
+    height: 50px;
+    text-indent: -9999px;
+}
+
+/* 타이틀 */
+.mind-title h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 100px 0 50px 0;
+    font-family:'NanumSquareBold';
+}
+
+/* 메인이미지 */
+.main-img {
+    background: url('../images/mind_main.jpg') center center / 100% no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* wrapper (좌우, 하단패딩) */
+.wrapper{
+    padding: 0 30px 120px;
+    text-align: center;
+    min-width: 372px;
+    margin: auto;
+}
+
+/* 타이틀2 */
+.mind-title2{
+    width: 100%;
+    font-family: 'MaruBuri';
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -1px;
+    padding: 100px 10px;
+    word-break: keep-all;
+}
+
+/* 본문 */
+
+
+/* 사진들 */
+.imgs{
+    text-align: center;
+    padding-bottom: 35px;
+}
+.imgs img{
+    width: 100%;
+}
+
+
+.item>i{
+    position: relative;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+.item>i::after{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: calc(50% - 35px);
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.item>h4{
+    font-family: 'NanumSquareLight';
+    font-size: 2em;
+    letter-spacing: -1px;
+    padding: 25px 0;
+
+}
+
+.item>p{
+    
+    font-family: 'NanumSquareLight';
+    word-break: keep-all;
+    font-size: 15px;
+    padding: 0 20px;
+    letter-spacing: -0.03em;
+    line-height: 28px;
+    padding-bottom: 50px;
+}
+
+.item>p>span{
+    display: inline-block;
+    background-color: rgba(201, 174, 120, 1);
+    color: #fff;
+    line-height: 25px;
+    padding: 0 3px;
+    margin: 0 2px;
+}
+
+
